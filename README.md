@@ -12,7 +12,7 @@ Then run these command on your duckietop
 duckietop $ source environment.sh
 duckietop $ source set_ros_master.sh <vehicle_name>
 duckietop $ source set_vehicle_name.sh <vehicle_name>
-duckietop $ roslaunch virtualJoy.launch
+duckietop $ python virtualJoy.py
 
 Then a window will pop up, then you can use the ARROW_KEYS to control it
 
