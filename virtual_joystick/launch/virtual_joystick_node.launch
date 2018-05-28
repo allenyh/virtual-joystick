@@ -1,0 +1,8 @@
+<launch>
+	<arg name="veh" default="ai"/>
+	<arg name="node_name" default="virtual_joystick_node"/>
+	<arg name="pkg_name" default="virtual_joystick"/>
+	<param name="~veh_name" type="str" value="$(arg veh)"/>
+		<node pkg="$(arg pkg_name)" output="screen" type="$(arg node_name).py" name="$(arg node_name)">
+		</node>
+</launch>
