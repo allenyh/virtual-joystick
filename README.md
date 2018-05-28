@@ -8,11 +8,10 @@ For example, duckiebot $ roslaunch duckietown joystick.launch veh:=<vehicle_name
 Then run these command on your duckietop
 
 # Usage
-
+after catkin_make,
 duckietop $ source environment.sh
 duckietop $ source set_ros_master.sh <vehicle_name>
-duckietop $ source set_vehicle_name.sh <vehicle_name>
-duckietop $ python virtualJoy.py
+duckietop $ roslaunch virtual_joystick virtual_joystick_node.launch veh:=<vehicle_name>
 
 Then a window will pop up, then you can use the ARROW_KEYS to control it
 
